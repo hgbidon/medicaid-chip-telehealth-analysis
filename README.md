@@ -184,6 +184,6 @@ This project is licensed under the MIT License.
 Healthcare utilization data sourced from CMS Medicaid Open Data:
 https://data.medicaid.gov/
 
-Project completed during the TruBridge Healthcare Data Analytics Externship.
+Project completed during the TruBridge Healthcare Data Analytics Externship at Extern.
 
 Maintained and analyzed by Hana Gabrielle Bidon.
