@@ -20,7 +20,7 @@ The analysis uses the official **Telehealth Services Provided to the Medicaid an
 
 This project examines how telehealth adoption evolved before, during, and after the COVID-19 pandemic, highlighting differences in healthcare access patterns, utilization behavior, and state-level adoption trends.
 
-This project was completed during the TruBridge Healthcare Data Analytics Externship.
+This project was completed during the TruBridge Healthcare Data Analytics Externship at Extern.
 
 ---
 
