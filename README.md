@@ -12,135 +12,206 @@
 
 ---
 
-## 📊 Overview
+# 📊 Project Overview
 
-This project analyzes longitudinal telehealth utilization patterns across Medicaid and CHIP populations in Pennsylvania and Ohio using CMS Medicaid Open Data (2018–2022).
+This project analyzes longitudinal telehealth utilization patterns across Medicaid and CHIP populations in Pennsylvania and Ohio using CMS Medicaid Open Data from 2018–2022.
 
-The goal is to understand how telehealth adoption evolved before, during, and after the COVID-19 pandemic, with a focus on:
+The analysis examines how telehealth adoption evolved before, during, and after the COVID-19 pandemic, with emphasis on:
 
 * Healthcare access patterns
-* Utilization behavior differences across populations
-* State-level variation in telehealth adoption
-* Post-pandemic retention of virtual care services
+* Telehealth adoption and retention trends
+* State-level utilization differences
+* Medicaid vs CHIP behavioral variation
+* Post-pandemic healthcare delivery changes
 
-This project was completed as part of a Healthcare Data Analytics Externship with TruBridge (via Extern).
+The project was completed as part of a Healthcare Data Analytics Externship with TruBridge through Extern.
 
 ---
 
-## 🧠 Analytical Framing
+# 🎯 Project Objectives
 
-This project treats CMS telehealth data as a structured healthcare analytics system designed to support:
+The primary goals of this analysis were to:
+
+* Evaluate longitudinal telehealth utilization trends
+* Compare adoption trajectories between Pennsylvania and Ohio
+* Analyze utilization differences between Medicaid and CHIP populations
+* Measure post-pandemic telehealth retention patterns
+* Develop a reproducible healthcare analytics workflow using Python
+
+---
+
+# 🧠 Analytical Framing
+
+This project approaches CMS telehealth data as a structured healthcare analytics system designed to support:
 
 * Population-level utilization analysis
-* Comparative state healthcare access evaluation
-* Medicaid vs CHIP behavioral differences
-* Longitudinal healthcare delivery trend tracking
+* Comparative healthcare access evaluation
+* Longitudinal trend monitoring
+* Standardized metric reporting
+* Public health and operational insight generation
 
-The analysis emphasizes **metric consistency, reproducibility, and standardized healthcare reporting logic**.
+The analysis emphasizes reproducibility, metric consistency, and scalable reporting logic commonly used in healthcare analytics workflows.
 
 ---
 
-## 🧩 Data Model
+# 🗂️ Data Model
 
-To support structured healthcare analysis, the dataset is organized conceptually into:
+To support structured analysis, the dataset was conceptually organized into fact and dimension tables.
 
-### 📌 Fact Table: Telehealth Utilization
+## 📌 Fact Table: Telehealth Utilization
+
+Contains:
 
 * Monthly telehealth visit counts
 * Utilization rates per 1,000 beneficiaries
 * Service volume metrics
 
-### 📌 Dimension Tables
+## 📌 Dimension Tables
 
-* **State:** Pennsylvania, Ohio
-* **Time:** Monthly and yearly periods (2018–2022)
-* **Population:** Medicaid, CHIP
-* **Service Type:** Telehealth service categories
+### State
 
-This structure enables consistent aggregation across time, geography, and population groups.
+* Pennsylvania
+* Ohio
 
----
+### Time
 
-## 📊 Metric Definitions
+* Monthly periods
+* Yearly aggregation (2018–2022)
 
-To ensure consistency across analysis, the following metrics were defined:
+### Population
 
-* **Telehealth Utilization Rate:** Visits per 1,000 Medicaid/CHIP beneficiaries
-* **Adoption Trend:** Year-over-year change in telehealth volume
-* **Service Distribution:** Proportion of telehealth usage by service category
-* **Retention Pattern:** Sustained utilization compared to pre-pandemic baseline
+* Medicaid
+* CHIP
 
-These definitions support reproducible and comparable healthcare reporting.
+### Service Type
 
----
+* Telehealth service categories
 
-## 🧮 Data Preparation & Standardization
-
-* Cleaned and standardized a **12,700-row CMS telehealth dataset** using Python (Pandas)
-* Resolved missing values, inconsistent formats, and multi-year schema variation
-* Structured dataset into an analysis-ready format for longitudinal comparison
-* Ensured consistency in healthcare reporting variables across states and years
+This structure enables consistent aggregation across geography, time, and population groups.
 
 ---
 
-## 🔄 Analytical Pipeline
+# 📏 Metric Definitions
 
-The project follows a structured analytics workflow:
+The following standardized metrics were used throughout the analysis:
 
-1. **Data Ingestion** – CMS Medicaid Open Data (2018–2022)
-2. **Data Cleaning** – Missing values, formatting inconsistencies, schema alignment
-3. **Data Transformation** – Aggregation by state, time, and population group
-4. **Metric Construction** – Standardized healthcare utilization metrics
-5. **Exploratory Analysis** – Trend and cohort comparisons
-6. **Visualization & Insight Generation** – Communication of findings
+| Metric                      | Definition                                              |
+| --------------------------- | ------------------------------------------------------- |
+| Telehealth Utilization Rate | Visits per 1,000 beneficiaries                          |
+| Adoption Trend              | Year-over-year change in utilization volume             |
+| Service Distribution        | Proportion of telehealth usage by service category      |
+| Retention Pattern           | Sustained utilization relative to pre-pandemic baseline |
+
+These metrics support reproducible healthcare reporting and comparative analysis.
 
 ---
 
-## 📈 Exploratory Analysis
+# 🧹 Data Preparation & Standardization
+
+The project included extensive healthcare data cleaning and transformation using Python and Pandas.
+
+Key preparation steps included:
+
+* Cleaning and standardizing a 12,700-row CMS telehealth dataset
+* Resolving missing values and inconsistent formatting
+* Aligning multi-year schema differences across datasets
+* Standardizing reporting variables across states and populations
+* Transforming raw CMS data into an analysis-ready structure
+
+---
+
+# 🔄 Analytics Pipeline
+
+The project follows a structured end-to-end analytics workflow:
+
+1. **Data Ingestion**
+   CMS Medicaid & CHIP Open Data (2018–2022)
+
+2. **Data Cleaning**
+   Missing values, formatting inconsistencies, schema alignment
+
+3. **Data Transformation**
+   Aggregation by state, year, and population group
+
+4. **Metric Construction**
+   Standardized utilization and trend metrics
+
+5. **Exploratory Analysis**
+   Longitudinal and comparative healthcare analysis
+
+6. **Visualization & Insight Generation**
+   Communication of findings through visual analytics
+
+---
+
+# 📈 Exploratory Analysis
 
 Key analyses include:
 
-* Telehealth utilization trends over time (2018–2022)
-* State-level comparison of adoption trajectories (PA vs OH)
-* Medicaid vs CHIP utilization behavior differences
+* Telehealth utilization trends over time
 * COVID-19 impact on healthcare delivery patterns
-* Post-pandemic stabilization of telehealth usage
+* Medicaid vs CHIP utilization comparisons
+* State-level adoption trajectory analysis
+* Post-pandemic stabilization and retention trends
 
 ---
 
-## 🎨 Data Visualization
+# 🎨 Data Visualization
 
-Developed **21 visualizations**, including:
+Developed 21 visualizations to communicate utilization patterns and healthcare trends, including:
 
-* Time-series trends in telehealth adoption
+* Time-series telehealth adoption trends
 * State-level utilization comparisons
 * Medicaid vs CHIP service distribution
-* Post-pandemic retention curves
-* Longitudinal healthcare access patterns
-
-These visualizations were used to communicate findings to technical and non-technical stakeholders.
+* Longitudinal retention curves
+* Comparative healthcare access visualizations
 
 ---
 
-## 📌 Key Insights
+# 📌 Key Findings
 
 * Telehealth utilization increased sharply during the COVID-19 pandemic across both states.
-* Pennsylvania and Ohio exhibited different adoption and retention trajectories.
-* Medicaid and CHIP populations demonstrated distinct utilization behaviors over time.
-* Telehealth usage remained above pre-2020 levels, indicating sustained integration into healthcare delivery systems.
+* Pennsylvania and Ohio demonstrated different adoption and retention trajectories.
+* Medicaid and CHIP populations exhibited distinct utilization behaviors over time.
+* Telehealth usage remained above pre-2020 baseline levels, suggesting sustained integration into healthcare delivery systems.
 
 ---
 
-## ⚙️ Tech Stack
+# 🏥 Operational & Policy Relevance
 
-* **Languages:** Python
-* **Libraries:** Pandas, NumPy, Matplotlib
-* **Environment:** Google Colab
-* **Data Source:** CMS Medicaid & CHIP Open Data
+This analysis demonstrates how longitudinal telehealth metrics can support:
+
+* Medicaid program evaluation
+* Healthcare access monitoring
+* Population health reporting
+* Post-pandemic care delivery assessment
+* Public health and operational decision-making
 
 ---
 
-## 📂 Repository Structure
+# ⚙️ Tech Stack
+
+## Languages
+
+* Python
+
+## Libraries
+
+* Pandas
+* NumPy
+* Matplotlib
+
+## Environment
+
+* Google Colab
+
+## Data Source
+
+* CMS Medicaid & CHIP Open Data
+
+---
+
+# 📂 Repository Structure
 
 ```bash
 📦 medicaid-chip-telehealth-analysis
@@ -155,61 +226,79 @@ These visualizations were used to communicate findings to technical and non-tech
 
 ---
 
-## 🚀 How to Run
+# 🚀 Running the Project
 
-### Option 1: Google Colab (Recommended)
+## Option 1: Google Colab (Recommended)
 
 Open the notebook:
 
-[https://colab.research.google.com/drive/1OrOKgkDu-tHjrIl4pbxnSJ6BjknKwxdH?usp=sharing](https://colab.research.google.com/drive/1OrOKgkDu-tHjrIl4pbxnSJ6BjknKwxdH?usp=sharing)
+https://colab.research.google.com/drive/1OrOKgkDu-tHjrIl4pbxnSJ6BjknKwxdH?usp=sharing
 
-Run all cells to reproduce:
+Run all notebook cells to reproduce:
 
 * Data cleaning pipeline
 * Metric construction
-* Analysis and visualizations
+* Exploratory analysis
+* Visualizations and findings
 
 ---
 
-## 📊 Project Outputs
+# 📊 Project Deliverables
 
-### 📓 Interactive Notebook
+## 📓 Interactive Notebook
 
-Full end-to-end healthcare analytics workflow in Python.
+End-to-end healthcare analytics workflow in Python.
 
-### 📊 Visual Analysis
+## 📊 Visual Analytics
 
-21 visualizations covering utilization trends and disparities.
+21 visualizations illustrating utilization trends and comparative patterns.
 
-### 📈 Presentation
+## 📈 Presentation Materials
 
-Narrative summary of healthcare access trends and post-pandemic shifts.
+Narrative summary of healthcare access trends and post-pandemic telehealth adoption.
 
 ---
 
-## 🧾 Healthcare Data Source
+# 🧾 Data Source
 
 CMS Medicaid & CHIP Telehealth Dataset:
-[https://data.cms.gov/dataset/651fa253-4dd4-4867-8725-2b5ae1dd5ce9](https://data.cms.gov/dataset/651fa253-4dd4-4867-8725-2b5ae1dd5ce9)
 
-Includes:
+https://data.cms.gov/dataset/651fa253-4dd4-4867-8725-2b5ae1dd5ce9
+
+The dataset includes:
 
 * Monthly telehealth utilization metrics
 * Medicaid & CHIP service counts
 * State-level healthcare access data
-* Telehealth modality categories
+* Telehealth service categories
 
 ---
 
-## 🙌 Acknowledgments
+# 🔗 Additional Project Resources
+
+## Interactive Artifact
+
+https://claude.ai/public/artifacts/cc6d38bc-ea1d-4020-afc1-b63184e51cb2
+
+## Presentation Deck
+
+https://gamma.app/docs/From-Crisis-to-Continuity-How-Telehealth-Reshaped-Care-Access-ut4cuv75dxk3coi
+
+## Project Presentation PDF
+
+https://drive.google.com/file/d/1-eEETUnuNSIFgNqsnaoxM_D05e592QVV/view?usp=sharing
+
+---
+
+# 🙌 Acknowledgments
 
 * CMS Medicaid Open Data
-* TruBridge Healthcare Data Analytics Externship (Extern program)
+* TruBridge Healthcare Data Analytics Externship (Extern)
 
 ---
 
-## 🧠 Author
+# 👩‍💻 Author
 
-Maintained and analyzed by **Hana Gabrielle Bidon**
+**Hana Gabrielle Bidon**
 
-Focus: Healthcare Analytics | Behavioral Data | Data Systems | Science Communication
+Healthcare Analytics | Behavioral Data | Data Systems | Science Communication
